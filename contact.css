@@ -1,0 +1,13 @@
+.whatsapp-card {
+  display: grid;
+  gap: 16px;
+  padding: 34px;
+  border: 1px solid rgba(184, 212, 0, .45);
+  border-radius: 8px;
+  background: #0d2729;
+}
+.whatsapp-card h3 { font-size: 1.65rem; }
+.whatsapp-card p { color: #bdd0d0; }
+.whatsapp-card small { color: #b8d400; font-weight: 800; letter-spacing: .08em; }
+.whatsapp-icon { color: #b8d400; font: 800 2.5rem 'Manrope', sans-serif; }
+.whatsapp-card .btn { margin-top: 8px; }
