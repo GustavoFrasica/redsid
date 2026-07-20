@@ -1,0 +1,83 @@
+.client-access {
+  background: var(--white);
+}
+
+.client-access-intro {
+  margin-bottom: 44px;
+}
+
+.client-access-intro .body-copy {
+  max-width: 620px;
+}
+
+.client-access-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.client-access-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px 20px;
+  align-items: start;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f9fcfa;
+}
+
+.client-access-card h3 {
+  margin-top: 3px;
+  font-size: 1.55rem;
+}
+
+.client-access-card p {
+  grid-column: 2;
+  max-width: 440px;
+  color: var(--muted);
+}
+
+.client-access-card .btn {
+  grid-column: 2;
+  justify-self: start;
+  margin-top: 8px;
+}
+
+.client-access-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 5px;
+  background: var(--teal);
+  color: var(--white);
+  font: 800 .78rem var(--display);
+}
+
+.client-access-card-dark {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--white);
+}
+
+.client-access-card-dark p {
+  color: #bdd0d0;
+}
+
+.client-access-card-dark .client-access-icon {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+@media (max-width: 520px) {
+  .client-access-card {
+    grid-template-columns: 1fr;
+    padding: 26px;
+  }
+
+  .client-access-card p,
+  .client-access-card .btn {
+    grid-column: 1;
+  }
+}
